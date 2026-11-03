@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Megan Mello, Sr. Loan Officer with RESCOM Mortgage Lending. Purchase loans, HELOCs, DSCR, refinances, non-QM bank statement loans, and reverse mortgages in San Diego and California. NMLS #632565.">
+<link rel="canonical" href="https://homeloansbymegan.com/">
+<title>Home Loans by Megan | Megan Mello, Sr. Loan Officer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7F6;--surface:#FFFFFF;--sand:#E9E4D6;--ink:#14231F;--muted:#4D605A;
+  --pine:#0F5C4D;--line:#CBD6D1;--gold:#9A7B2F;--cta:#0F5C4D;--cta-ink:#FFFFFF;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A17;--surface:#16251F;--sand:#1E2E27;--ink:#EAF1EE;--muted:#9DB0A9;
+    --pine:#5FC2A6;--line:#2B3F37;--gold:#C8A96A;--cta:#F2EBD8;--cta-ink:#0F1A17;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1A17;--surface:#16251F;--sand:#1E2E27;--ink:#EAF1EE;--muted:#9DB0A9;
+  --pine:#5FC2A6;--line:#2B3F37;--gold:#C8A96A;--cta:#F2EBD8;--cta-ink:#0F1A17;color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(2.1rem,6vw,3.6rem);max-width:16ch}
+h2{font-size:clamp(1.6rem,4vw,2.3rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--pine)}
+a:not(.btn):hover{color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:14px}
+.name{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.15rem}
+.name small{display:block;font:400 .8rem "Hanken Grotesk",sans-serif;color:var(--muted)}
+.btn{display:inline-block;background:var(--cta);color:var(--cta-ink);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:8px;border:0;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn:hover{filter:brightness(1.07)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+:focus-visible{outline:3px solid var(--pine);outline-offset:3px}
+.hero{padding:64px 0 48px}
+.hero p.lead{font-size:1.2rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-grid{display:grid;gap:32px;grid-template-columns:1fr;align-items:center}
+.portrait{display:block;width:100%;max-width:380px;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:10px;margin:0 auto}
+.paths{display:grid;gap:20px;grid-template-columns:1fr}
+.path{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:26px}
+.path ul{padding-left:1.1em;margin:0 0 1em}
+.path li{margin-bottom:.4em}
+.sand{background:var(--sand)}
+.calc{display:grid;gap:24px;grid-template-columns:1fr;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
+label{display:block;font-weight:500;margin:0 0 .35em}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:12px;margin-bottom:16px}
+.result{font-family:Fraunces,Georgia,serif;font-size:2.6rem;font-weight:700;line-height:1;margin:.2em 0;color:var(--gold)}
+.verdict{color:var(--muted);min-height:3.2em}
+.fine{font-size:.85rem;color:var(--muted)}
+.reviews{display:grid;gap:20px;grid-template-columns:1fr;margin:24px 0}
+.review{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:24px;margin:0}
+.review p{margin:0 0 .8em}
+.review .stars{color:var(--gold);font-size:1.2rem;letter-spacing:2px;margin-bottom:.5em}
+.review p{max-width:none}
+.reviews:has(> .review:only-child){grid-template-columns:1fr;max-width:760px}
+.review cite{font-style:normal;font-weight:700;color:var(--muted);font-size:.95rem}
+footer{border-top:2px solid var(--gold);padding:32px 0 40px;font-size:.85rem;color:var(--muted)}
+footer p{max-width:80ch}
+@media(min-width:760px){
+  .paths{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+  .reviews{grid-template-columns:1fr 1fr}
+  .hero-grid{grid-template-columns:1.4fr 1fr;gap:48px}
+  .calc{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.nav a.text{font-weight:500;text-decoration:none;color:var(--ink)}
+.nav a.text:hover{color:var(--pine)}
+a.name{text-decoration:none;color:var(--ink)}
+.cards{display:grid;gap:20px;grid-template-columns:1fr;margin:24px 0}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:24px;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--pine)}
+.card h3{margin:0;font-size:1.2rem}
+.card p{margin:0;color:var(--muted)}
+.meta{font-size:.85rem;color:var(--muted);letter-spacing:.02em}
+.article{max-width:68ch;margin:0 auto;padding:48px 0 24px}
+.article h1{font-size:clamp(1.9rem,5vw,2.8rem);max-width:none;text-wrap:balance}
+.article h2{font-size:1.5rem;margin-top:1.6em}
+.article p,.article li{max-width:none}
+.article ul{padding-left:1.2em}
+.article li{margin-bottom:.55em}
+.byline{display:flex;align-items:center;gap:12px;margin:12px 0 28px;color:var(--muted);font-size:.95rem}
+.byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:top}
+.cta{background:var(--sand);border-radius:10px;padding:26px;margin:36px 0 8px}
+.cta h2{margin-top:0}
+@media(min-width:760px){.cards{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="name" href="#">Home Loans by Megan<small>Megan Mello, Sr. Loan Officer | NMLS #632565 | DRE #02098325</small></a>
+    <nav class="nav"><a class="text" href="heloc.html">HELOC</a><a class="text" href="dscr.html">DSCR</a><a class="text" href="articles.html">Articles</a><a class="btn" href="#contact">Talk to me</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Loans other lenders turned down, structured to close.</h1>
+      <p class="lead">With over 22 years of experience in brokerage, underwriting, processing, and origination, I bring an underwriter’s eye to every loan, and I use that experience to find the right fit for you. Serving San Diego and all of California.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get a free loan review</a>
+        <a class="btn ghost" href="#loans">See loan options</a>
+      </div>
+    </div>
+    <img class="portrait" src="headshot.jpg" width="900" height="1350" alt="Megan Mello, Sr. Loan Officer" fetchpriority="high">
+  </div>
+</section>
+
+<section class="sand" id="loans">
+  <div class="wrap">
+    <h2>How I can help</h2>
+    <div class="paths">
+      <div class="path">
+        <h3>Buying a home</h3>
+        <p>Whether you’re a first-time buyer, moving up, or have a file that doesn’t fit the usual box, I’ll help you find the right structure and get it to the finish line.</p>
+        <ul>
+          <li>First-time and move-up buyers</li>
+          <li>Self-employed and non-traditional income</li>
+          <li>Pre-approvals you can shop with</li>
+        </ul>
+        <p class="fine">Available for California properties.</p>
+        <a class="btn" href="#contact">Ask about buying</a>
+      </div>
+      <div class="path">
+        <h3>HELOC: use your equity, keep your rate</h3>
+        <p>If your first mortgage has a low rate, you may not want to refinance it. A home equity line of credit lets you borrow against your equity and leave that first loan alone.</p>
+        <ul>
+          <li>Home improvements and repairs</li>
+          <li>Paying off higher-interest debt</li>
+          <li>Funding a down payment on another property</li>
+        </ul>
+        <p class="fine">Available for California properties.</p>
+        <a class="btn" href="heloc.html">Learn about HELOCs</a>
+      </div>
+      <div class="path">
+        <h3>DSCR loans for rental investors</h3>
+        <p>A DSCR loan qualifies you on the property’s rent, so there are no tax returns or W-2s to document. It works for purchases, refinances, and cash-out on rental properties.</p>
+        <ul>
+          <li>Single-family rentals and multifamily up to 10 units</li>
+          <li>Properties held in an LLC</li>
+          <li>Available in most states</li>
+        </ul>
+        <a class="btn" href="dscr.html">Learn about DSCR loans</a>
+      </div>
+      <div class="path">
+        <h3>Cash-out and rate-and-term refinance</h3>
+        <p>Replace your current mortgage with a new loan, either to take cash from your equity or to change your rate, term, or loan type. It can make sense when the numbers and your goals line up, and I’ll show you both sides.</p>
+        <ul>
+          <li>Home improvements and repairs</li>
+          <li>Consolidating higher-interest debt</li>
+          <li>Changing your rate or term, or removing mortgage insurance</li>
+        </ul>
+        <p class="fine">Available for California properties.</p>
+        <a class="btn" href="#contact">Ask about refinancing</a>
+      </div>
+      <div class="path">
+        <h3>Non-QM: bank statement and P&amp;L loans</h3>
+        <p>If you’re self-employed, your tax returns may not show what you really earn. Non-QM loans let you qualify using your bank deposits or a profit and loss statement instead. Rates are usually higher than conventional loans, and I’ll walk you through the trade-offs.</p>
+        <ul>
+          <li>12 or 24 months of personal or business bank statements</li>
+          <li>Profit and loss statements</li>
+          <li>Business owners, freelancers, and 1099 earners</li>
+        </ul>
+        <p class="fine">Available for California properties.</p>
+        <a class="btn" href="#contact">Ask about non-QM loans</a>
+      </div>
+      <div class="path">
+        <h3>Reverse mortgages</h3>
+        <p>For homeowners age 62 and older, a reverse mortgage can turn home equity into cash flow while you stay in your home. I’ll explain how it works, including the costs and the alternatives.</p>
+        <ul>
+          <li>Supplement retirement income</li>
+          <li>Pay off an existing mortgage</li>
+          <li>Create a line of credit for later</li>
+        </ul>
+        <p class="fine">Available for California properties.</p>
+        <a class="btn" href="#contact">Ask about a reverse mortgage</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sand">
+  <div class="wrap">
+    <h2>Why work with me</h2>
+    <p>I’ve worked on every side of a mortgage: brokerage, underwriting for banks, processing, and now origination. That experience gives me deep knowledge of loan programs and guidelines, so I can match you with the right program from the start. I know the underwriting process from the inside, and that experience has helped me close many complex loans. I’m with my clients every step of the way, from application to the closing table.</p>
+  </div>
+</section>
+
+<!-- ARTICLES:START -->
+<section id="articles">
+  <div class="wrap">
+    <h2>Articles</h2>
+    <div class="cards">
+      <a class="card" href="heloc-vs-cash-out-refinance.html">
+        <span class="meta">October 27, 2026 · 5 min read</span>
+        <h3>HELOC or Cash-Out Refinance? How California Homeowners Can Decide</h3>
+        <p>Compare a HELOC and a cash-out refinance for tapping home equity in San Diego and California, and learn how your current mortgage rate decides which fits.</p>
+      </a>
+    </div>
+    <a href="articles.html">See all articles</a>
+  </div>
+</section>
+<!-- ARTICLES:END -->
+
+<section id="reviews" class="sand">
+  <div class="wrap">
+    <h2>What clients say</h2>
+    <p>Read what my clients say about working with me, or share your own experience, on my Google Business Profile.</p>
+    <!-- REVIEWS:START (add review cards here) -->
+    <div class="reviews">
+      <blockquote class="review">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>I cannot recommend Megan highly enough! She is incredibly knowledgeable in all aspects of mortgages and lending, and her ability to explain the ins and outs of the mortgage and loan process makes what can often feel overwhelming seem manageable and stress-free. She is always available to answer questions, provide guidance, and ensure you feel informed and confident every step of the way.</p>
+        <p>What truly sets her apart is her efficiency, reliability, and unwavering commitment to her clients. She is proactive, detail-oriented, and consistently gets the job done, closing deals on time and making sure every detail is handled with care. She goes above and beyond to make the entire process as smooth and seamless as possible.</p>
+        <p>Working with Megan has been, hands down, the best decision I’ve made for my mortgage and loan needs. I will absolutely work with her again on future endeavors.</p>
+        <cite>Ashley K., Google review</cite>
+      </blockquote>
+    </div>
+    <!-- REVIEWS:END -->
+    <div class="actions">
+      <a class="btn" href="https://www.google.com/search?q=Megan+Maria+Mello" target="_blank" rel="noopener">Read my Google reviews</a>
+      <a class="btn ghost" href="https://g.page/r/CetXrKTJUKBsECE/review" target="_blank" rel="noopener">Leave a review</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap calc">
+    <div>
+      <h2>Tell me about your deal</h2>
+      <p>Send a few details and I’ll reply with my honest read, usually the same day. There’s no cost and no obligation.</p>
+      <p>Prefer to talk? Call or text <a href="tel:+17606725773">760-672-5773</a> or email <a href="mailto:megan@rescomfs.com">megan@rescomfs.com</a>.</p>
+    </div>
+    <form class="panel" id="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New lead from homeloansbymegan.com">
+      <input type="hidden" name="page" value="Homepage">
+      <label for="fn">Name</label>
+      <input id="fn" name="name" required autocomplete="name">
+      <label for="fp">Phone</label>
+      <input id="fp" name="phone" type="tel" required autocomplete="tel">
+      <label for="fe">Email</label>
+      <input id="fe" name="email" type="email" autocomplete="email">
+      <label for="ft">I’m interested in</label>
+      <select id="ft" name="interested_in">
+        <option>Buying a home</option>
+        <option>A home equity line of credit (HELOC)</option>
+        <option>A DSCR loan for a rental</option>
+        <option>A cash-out or rate-and-term refinance</option>
+        <option>A non-QM loan (bank statement or P&amp;L)</option>
+        <option>A reverse mortgage</option>
+        <option>Something else</option>
+      </select>
+      <label for="fm">Tell me about the property and what you want to do</label>
+      <textarea id="fm" name="message" rows="4"></textarea>
+      <button class="btn" type="submit">Send my details</button>
+      <p class="fine" style="margin-top:12px">I’ll reply personally, usually the same day. Your information is only used to respond to you.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Megan Mello, NMLS #632565, DRE #02098325. RESCOM Mortgage Lending, Inc., NMLS #226471, DRE #01854569. Equal Housing Lender. <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/632565" target="_blank" rel="noopener">NMLS Consumer Access</a></p>
+    <p>This is not a commitment to lend. All loans are subject to credit approval, property approval, and other conditions. Rates, terms, and programs are subject to change without notice. DSCR and other business-purpose loans are not for personal, family, or household use.</p>
+    <p>RESCOM Mortgage Lending, Inc., 940 Calle Amanecer, Suite D, San Clemente, CA 92673. <a href="https://www.rescomfs.com">www.rescomfs.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Sends the form through Formspree once YOUR_FORM_ID is replaced.
+     Until then, it falls back to opening the visitor's email app. */
+  var f=document.getElementById('form');if(!f)return;
+  f.addEventListener('submit',function(e){
+    if((f.getAttribute('action')||'').indexOf('YOUR_FORM_ID')===-1)return;
+    e.preventDefault();
+    var lines=[];
+    Array.prototype.forEach.call(f.elements,function(el){
+      if(!el.name||el.type==='hidden'||el.type==='submit')return;
+      var lab=f.querySelector('label[for="'+el.id+'"]');
+      lines.push((lab?lab.textContent:el.name)+': '+el.value);
+    });
+    var s=f.querySelector('[name="_subject"]');
+    window.location.href='mailto:megan@rescomfs.com?subject='+encodeURIComponent(s?s.value:'Website inquiry')+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>

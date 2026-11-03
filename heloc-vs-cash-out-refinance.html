@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Compare a HELOC and a cash-out refinance for tapping home equity in San Diego and California, and learn how your current mortgage rate decides which fits.">
+<title>HELOC or Cash-Out Refinance? How California Homeowners Can Decide | Home Loans by Megan</title>
+<link rel="canonical" href="https://homeloansbymegan.com/heloc-vs-cash-out-refinance.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7F6;--surface:#FFFFFF;--sand:#E9E4D6;--ink:#14231F;--muted:#4D605A;
+  --pine:#0F5C4D;--line:#CBD6D1;--gold:#9A7B2F;--cta:#0F5C4D;--cta-ink:#FFFFFF;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A17;--surface:#16251F;--sand:#1E2E27;--ink:#EAF1EE;--muted:#9DB0A9;
+    --pine:#5FC2A6;--line:#2B3F37;--gold:#C8A96A;--cta:#F2EBD8;--cta-ink:#0F1A17;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1A17;--surface:#16251F;--sand:#1E2E27;--ink:#EAF1EE;--muted:#9DB0A9;
+  --pine:#5FC2A6;--line:#2B3F37;--gold:#C8A96A;--cta:#F2EBD8;--cta-ink:#0F1A17;color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(2.1rem,6vw,3.6rem);max-width:16ch}
+h2{font-size:clamp(1.6rem,4vw,2.3rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--pine)}
+a:not(.btn):hover{color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:14px}
+.name{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.15rem}
+.name small{display:block;font:400 .8rem "Hanken Grotesk",sans-serif;color:var(--muted)}
+.btn{display:inline-block;background:var(--cta);color:var(--cta-ink);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:8px;border:0;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn:hover{filter:brightness(1.07)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+:focus-visible{outline:3px solid var(--pine);outline-offset:3px}
+.hero{padding:64px 0 48px}
+.hero p.lead{font-size:1.2rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-grid{display:grid;gap:32px;grid-template-columns:1fr;align-items:center}
+.portrait{display:block;width:100%;max-width:380px;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:10px;margin:0 auto}
+.paths{display:grid;gap:20px;grid-template-columns:1fr}
+.path{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:26px}
+.path ul{padding-left:1.1em;margin:0 0 1em}
+.path li{margin-bottom:.4em}
+.sand{background:var(--sand)}
+.calc{display:grid;gap:24px;grid-template-columns:1fr;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
+label{display:block;font-weight:500;margin:0 0 .35em}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:12px;margin-bottom:16px}
+.result{font-family:Fraunces,Georgia,serif;font-size:2.6rem;font-weight:700;line-height:1;margin:.2em 0;color:var(--gold)}
+.verdict{color:var(--muted);min-height:3.2em}
+.fine{font-size:.85rem;color:var(--muted)}
+.reviews{display:grid;gap:20px;grid-template-columns:1fr;margin:24px 0}
+.review{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:24px;margin:0}
+.review p{margin:0 0 .8em}
+.review cite{font-style:normal;font-weight:700;color:var(--muted);font-size:.95rem}
+footer{border-top:2px solid var(--gold);padding:32px 0 40px;font-size:.85rem;color:var(--muted)}
+footer p{max-width:80ch}
+@media(min-width:760px){
+  .paths{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+  .reviews{grid-template-columns:1fr 1fr}
+  .hero-grid{grid-template-columns:1.4fr 1fr;gap:48px}
+  .calc{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.nav a.text{font-weight:500;text-decoration:none;color:var(--ink)}
+.nav a.text:hover{color:var(--pine)}
+a.name{text-decoration:none;color:var(--ink)}
+.cards{display:grid;gap:20px;grid-template-columns:1fr;margin:24px 0}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:24px;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--pine)}
+.card h3{margin:0;font-size:1.2rem}
+.card p{margin:0;color:var(--muted)}
+.meta{font-size:.85rem;color:var(--muted);letter-spacing:.02em}
+.article{max-width:68ch;margin:0 auto;padding:48px 0 24px}
+.article h1{font-size:clamp(1.9rem,5vw,2.8rem);max-width:none;text-wrap:balance}
+.article h2{font-size:1.5rem;margin-top:1.6em}
+.article p,.article li{max-width:none}
+.article ul{padding-left:1.2em}
+.article li{margin-bottom:.55em}
+.byline{display:flex;align-items:center;gap:12px;margin:12px 0 28px;color:var(--muted);font-size:.95rem}
+.byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:top}
+.cta{background:var(--sand);border-radius:10px;padding:26px;margin:36px 0 8px}
+.cta h2{margin-top:0}
+@media(min-width:760px){.cards{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "HELOC or Cash-Out Refinance? How California Homeowners Can Decide", "description": "Compare a HELOC and a cash-out refinance for tapping home equity in San Diego and California, and learn how your current mortgage rate decides which fits.", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://homeloansbymegan.com/heloc-vs-cash-out-refinance.html", "image": "https://homeloansbymegan.com/headshot.jpg", "author": {"@type": "Person", "name": "Megan Mello", "jobTitle": "Sr. Loan Officer", "url": "https://homeloansbymegan.com"}, "publisher": {"@type": "Organization", "name": "RESCOM Mortgage Lending, Inc."}}</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="name" href="/">Home Loans by Megan<small>Megan Mello, Sr. Loan Officer | NMLS #632565 | DRE #02098325</small></a>
+    <nav class="nav"><a class="text" href="heloc.html">HELOC</a><a class="text" href="dscr.html">DSCR</a><a class="text" href="articles.html">Articles</a><a class="btn" href="/#contact">Talk to me</a></nav>
+  </div>
+</header>
+<main>
+<article class="wrap article">
+  <p class="meta"><a href="articles.html">Articles</a></p>
+  <h1>HELOC or Cash-Out Refinance? How California Homeowners Can Decide</h1>
+  <div class="byline"><img src="headshot.jpg" alt="" width="48" height="48"><span>By Megan Mello, Sr. Loan Officer · October 27, 2026 · 5 min read</span></div>
+<p>If you own a home in San Diego or anywhere in California, there’s a good chance you’ve built up a lot of equity. When it’s time to put that equity to work, whether for a remodel, paying off debt, or helping a child with a down payment, most homeowners end up choosing between two loans: a home equity line of credit (HELOC) or a cash-out refinance.</p>
+
+<p>Both let you borrow against your home. They work very differently, though, and the right one depends mostly on one number: the rate on the mortgage you have now.</p>
+
+<h2>How a HELOC works</h2>
+
+<p>A HELOC is a second loan that sits behind your existing mortgage. Your first mortgage stays exactly as it is, with the same rate, balance, and payment.</p>
+
+<ul>
+  <li><strong>You borrow as you need it.</strong> A HELOC works like a credit line. You’re approved for a limit, draw what you need, and pay interest only on what you’ve used.</li>
+  <li><strong>It usually has two phases.</strong> During the draw period, often around 10 years, many HELOCs allow interest-only payments. After that, the repayment period begins and you pay down principal and interest.</li>
+  <li><strong>The rate is usually variable.</strong> Most HELOC rates are tied to the prime rate, so your payment can go up or down over time. Some lenders offer an option to lock part of the balance at a fixed rate.</li>
+  <li><strong>Upfront costs are usually lower</strong> than a full refinance.</li>
+</ul>
+
+<h2>How a cash-out refinance works</h2>
+
+<p>A cash-out refinance replaces your current mortgage with a new, larger loan. You receive the difference in cash at closing.</p>
+
+<ul>
+  <li><strong>You end up with one loan and one payment.</strong></li>
+  <li><strong>Fixed-rate options are common,</strong> so your payment can stay the same for the life of the loan.</li>
+  <li><strong>Your whole balance moves to today’s rate,</strong> not just the cash you take out.</li>
+  <li><strong>Closing costs are higher,</strong> similar to the costs of getting a new mortgage, and your loan term usually starts over.</li>
+</ul>
+
+<h2>The question that usually decides it</h2>
+
+<p>Many California homeowners bought or refinanced when rates were much lower than they are today. If that’s you, a cash-out refinance would replace your low rate on the entire balance, not just the new money. That can raise your payment more than you expect.</p>
+
+<p>Here’s a simple example. Say your home is worth $900,000 and you owe $400,000 on a first mortgage at 3%. You want $100,000 for a remodel.</p>
+
+<ul>
+  <li><strong>With a HELOC,</strong> your $400,000 stays at 3%, and only the $100,000 you borrow is at the HELOC rate.</li>
+  <li><strong>With a cash-out refinance,</strong> all $500,000 moves to the new rate.</li>
+</ul>
+
+<p>In that situation, a HELOC often costs less overall. The math can flip the other way when your current rate is close to or above today’s rates, or when you want one predictable fixed payment.</p>
+
+<h2>When a HELOC tends to fit</h2>
+
+<ul>
+  <li>Your current mortgage rate is low and you want to keep it.</li>
+  <li>You need money over time, like a remodel paid in stages.</li>
+  <li>You plan to pay the balance down fairly quickly.</li>
+  <li>You’re comfortable with a payment that can change.</li>
+</ul>
+
+<h2>When a cash-out refinance tends to fit</h2>
+
+<ul>
+  <li>Your current rate is close to or higher than today’s rates.</li>
+  <li>You want one fixed payment you can count on.</li>
+  <li>You’re consolidating higher-interest debt and want a single loan.</li>
+  <li>You want to change something else about your mortgage, like the term or removing mortgage insurance.</li>
+</ul>
+
+<h2>A few other things to know</h2>
+
+<ul>
+  <li><strong>How much you can borrow:</strong> Lenders limit how much of your home’s value you can borrow against in total. Conventional cash-out refinances are generally capped at 80% of the home’s value. HELOC limits vary by lender and program.</li>
+  <li><strong>Qualifying:</strong> Both loans look at your credit, income, debts, and your home’s value. If you’re self-employed, there are options that don’t rely only on tax returns.</li>
+  <li><strong>Taxes:</strong> Interest on either loan may be tax deductible in some cases, depending on how you use the money. Check with your tax professional before you count on it.</li>
+  <li><strong>Your right to cancel:</strong> When you take a HELOC or refinance on your primary residence, federal law generally gives you three business days after closing to change your mind.</li>
+</ul>
+
+<h2>The bottom line</h2>
+
+<p>There’s no single right answer. It comes down to your current rate, how much you need, how soon you’ll pay it back, and how much payment change you’re comfortable with. The best way to decide is to compare both options side by side with your real numbers.</p>
+
+<p>For more on how a HELOC works and a quick estimate of how much you could borrow, see my <a href="heloc.html">California HELOC page</a>.</p>
+
+<p>If you’d like help running those numbers, I’m happy to walk through both options with you. There’s no cost and no obligation.</p>
+
+  <div class="cta">
+    <h2>Want to compare your options?</h2>
+    <p>Tell me a little about your home and your goals, and I’ll walk you through what fits. Call or text 760-672-5773.</p>
+    <a class="btn" href="/#contact">Talk to me</a>
+  </div>
+  <p class="meta">This article is for general education only and isn’t financial, tax, or legal advice. Loan programs, limits, and guidelines vary by lender and change over time.</p>
+</article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Megan Mello, NMLS #632565, DRE #02098325. RESCOM Mortgage Lending, Inc., NMLS #226471, DRE #01854569. Equal Housing Lender. <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/632565" target="_blank" rel="noopener">NMLS Consumer Access</a></p>
+    <p>This is not a commitment to lend. All loans are subject to credit approval, property approval, and other conditions. Rates, terms, and programs are subject to change without notice. DSCR and other business-purpose loans are not for personal, family, or household use.</p>
+    <p>RESCOM Mortgage Lending, Inc., 940 Calle Amanecer, Suite D, San Clemente, CA 92673. <a href="https://www.rescomfs.com">www.rescomfs.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
